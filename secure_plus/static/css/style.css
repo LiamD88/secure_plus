@@ -1,8 +1,18 @@
-.parallax {
+.parallax1 {
   background-image: url("../img/home-page.jpg");
-  height: 500px;
+  height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax2 {
+    background-image: url("../img/home-page2.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
