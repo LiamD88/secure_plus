@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['secure-plus.herokuapp.com',
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
-    'services.apps.ServicesConfig',
+    'services1.apps.Services1Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
