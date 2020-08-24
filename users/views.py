@@ -12,4 +12,4 @@ def register(request):
         return redirect('home')           
     else:
         form = RegistrationForm()
-    return render(request, 'register.html')
+    return render(request, 'register.html', {'form': form})
