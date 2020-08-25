@@ -8,8 +8,7 @@ def register(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            user = auth.authenticate(username=username, password=password)
-        return redirect('home')           
+            return redirect('home')           
     else:
         form = RegistrationForm()
     return render(request, 'register.html', {'form': form})
