@@ -2,7 +2,15 @@
  
 {% block content %}
 
+<form method="POST" action="{% url 'register' %}">
 
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form }}
+    </div>
+    <input type="submit" class="btn btn-primary">
+
+</form>
 
 
 {% endblock %}

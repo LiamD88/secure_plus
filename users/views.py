@@ -25,7 +25,7 @@ def login(request):
                 auth.login(request, user)
                 return redirect('home')
 
-        else:
-            login = LoginForm()
+    else:
+        login = LoginForm()
 
-    return redirect(request, 'login.html', )
+    return render(request, 'login.html', {'form': login})
