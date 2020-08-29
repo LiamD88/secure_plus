@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import auth
+from django.contrib import messages
 from .forms import RegistrationForm, LoginForm
+
 
 def register(request):
 
@@ -8,7 +10,10 @@ def register(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')           
+            messages.success(request, 'Congratulations, you are now registered!')
+            return redirect('home')
+        else:
+                messages.error(request, 'There was an error registering your account.')           
     else:
         form = RegistrationForm()
     return render(request, 'register.html', {'form': form})
@@ -23,8 +28,12 @@ def login(request):
 
         if user is not None:
                 auth.login(request, user)
+                messages.success(request, 'You have logged in succesfully!')
                 return redirect('home')
 
+        else:
+                messages.error(request, 'Details entered incorrect')
+                return redirect('login')
     else:
         login = LoginForm()
 
