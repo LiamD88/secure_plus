@@ -26,12 +26,15 @@ def login(request):
         username = request.POST['username']
         password = request.POST['password']
 
-        if user is not None:
+        if login.is_valid():
+            user = auth.authenticate(username=username, password=password)
+
+            if user is not None:
                 auth.login(request, user)
                 messages.success(request, 'You have logged in succesfully!')
                 return redirect('home')
 
-        else:
+            else:
                 messages.error(request, 'Details entered incorrect')
                 return redirect('login')
     else:
