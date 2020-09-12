@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['secure-plus.herokuapp.com',
 # Application definition
 
 INSTALLED_APPS = [
+    'cart.apps.CartConfig',
     'about.apps.AboutConfig',
     'users.apps.UsersConfig',
     'home.apps.HomeConfig',
