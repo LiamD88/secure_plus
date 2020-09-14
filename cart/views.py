@@ -33,7 +33,7 @@ def amend_cart(request, id):
     cart = request.session.get('cart', {})
 
     if quantity > 0:
-    cart[id] = quantity
+        cart[id] = quantity
     else:
         cart.pop(id)
 
