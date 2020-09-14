@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
 def view_cart(request):
-   """ Render the main cart page"""
+    """ Render the main cart page"""
     return render(request, 'cart.html')
 
 
@@ -39,3 +39,5 @@ def amend_cart(request, id):
 
         request.session['cart'] = cart
         return redirect(reverse('cart'))
+
+        
