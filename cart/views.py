@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
 def view_cart(request):
@@ -22,4 +22,20 @@ def add_to_cart(request, id):
         messages.success(request, 'You have added one package to your cart!')
     else:
         messages.error(request, 'You must be logged in to add a package to the cart.')
-    return redirect('services1.html')
+    return redirect(reverse('services1'))
+
+
+def amend_cart(request, id):
+
+    """ Ability to increase/decrease number of items in cart """
+
+        quantity = int(request.POST.get('quantity'))
+        cart = request.session.get('cart', {})
+
+        if quantity > 0:
+            cart[id] = quantity
+        else:
+            cart.pop(id)
+
+        request.session['cart'] = cart
+        return redirect(reverse('cart'))
