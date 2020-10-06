@@ -50,7 +50,23 @@
         </ul>
 
     </div>
- 
+    
+    <div class="row">
+        <div class="col-12">
+            {% for ones in one %}
+            <div class="card">
+                <div class="card-header">
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ ones.name }}</h5>
+                  <p class="card-text">{{ ones.price }}</p>
+                  <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+              </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 

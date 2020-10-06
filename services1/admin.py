@@ -1,4 +1,9 @@
 from django.contrib import admin
-from .models import Packages
+from .models import One
+from .models import Monthly
+from .models import Yearly
 
-admin.site.register(Packages)
+admin.site.register(One)
+admin.site.register(Monthly)
+admin.site.register(Yearly
+)
