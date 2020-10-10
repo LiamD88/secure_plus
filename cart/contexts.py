@@ -1,18 +1,21 @@
 from django.shortcuts import get_object_or_404
-from services1.models import Packages
+from services1.models import Package
 
 def cart_contents(request):
     """This will allow cart contents to be available when rendering any page on the site"""
 
     cart = request.session.get('cart', {})
-
     cart_items = []
     total = 0
-    
 
-    for id, quantity in cart,items():
-        package = get_object_or_404(Packages, pk=id)
+    for item_id, quantity in cart.items():
+        package = get_object_or_404(Package, pk=item_id)
         total += quantity * package.price
-        cart_items.append({'id': id, 'quantity': quantity, 'package': package})
+        cart_items.append({'item_id': item_id, 'quantity': quantity, 'package': package})
 
-    return ('cart_items': cart_items, 'total': total)    
+    context = {
+        'cart_items': cart_items,
+        'total': total, 
+    }
+
+    return context   
