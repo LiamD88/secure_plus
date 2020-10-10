@@ -61,7 +61,7 @@
                 <div class="card-body">
                   <h5 class="card-title">{{ ones.name }}</h5>
                   <p class="card-text">{{ ones.price }}</p>
-                  <a href="#" class="btn btn-primary">Purchase</a>
+                  <a href="{% url 'add_to_cart' ones.id %}" class="btn btn-primary">Purchase</a>
                 </div>
               </div>
             {% endfor %}

@@ -3,54 +3,34 @@
 {% block content %}
 
 
-<!--image displayed to left with clicable text to the right-->
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
-            <img src="/static/img/test-image.jpg" alt="" class="img-fluid">
+    <div class="col-12">
+        <h1>Packages</h1>
 
-        </div>
-        <div class="col-md-6">
-            <h1>One Off Security Check</h1>
-            <p>here at secure plus we offer a once off payment which will allow us to do a thorough look
-                over your system and advise of any security flaws
+        <P>We offer 3 cyber security packages</P>
 
-                <p><a href="{% url 'oneoff' %}">Click here for more info or to purchase</a></p>
-            </p>
+        <div class="row">
+            {% for package in packages %}
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ package.name }}</h5>
+                      <p class="card-text">{{ package.description }}</p>
+                      <p>€{{ package.price }}</p>
+                      <a href="#" class="btn btn-primary">Learn More</a>
+                      <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
+                        {% csrf_token %}
+                     
+                        <button class="btn btn-lg"
+                                type="submit">Add To Cart</button>
+                    </form>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
         </div>
+
     </div>
-
-
-
-<!--image displayed to the right with clickable text to the left-->    <div class="row">
-        <div class="col-md-6">
-            <h1>Yearly Cover</h1>
-            <p>For an annual fee we can monitor your systems and have 24 hours support....
-
-                <p><a href="{% url 'yearly' %}">Click here for more info or to purchase</a></p>
-            </p>
-        </div>
-        <div class="col-md-6">
-            <img src="/static/img/test-image.jpg" alt="" class="img-fluid">
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <img src="/static/img/test-image.jpg" alt="" class="img-fluid">
-        </div>
-
-<!--second image displayed to left with clicable text to the right-->
-        <div class="col-md-6">
-            <h1>Monthly Cover</h1>
-            <p>for a monthly fee we can monitor your systems 24 hours a day. no commitment cancel at any time
-
-                <p><a href="{% url 'monthly' %}">Click here for more info or to purchase</a></p>
-            </p>
-        </div>
-    </div>
-</div>
-
 
 {% endblock %}

@@ -1,37 +1,26 @@
 from django.shortcuts import render
-from .models import One, Monthly, Yearly
+from .models import Package
 
 def services1(request):
-    return render(request, 'services1.html')
+
+    packages = Package.objects.all()
+
+    context = {
+        'packages': packages
+    }
+
+    return render(request, 'services1.html', context)
 
 def oneoff(request):
 
-    one = One.objects.all()
-
-    context = {
-        'one': one,
-    }  
-
-    return render(request, 'oneoff.html', context)
+    return render(request, 'oneoff.html')
 
 
 def monthly(request):
     
-    monthly = Monthly.objects.all()
-
-    context = {
-        'monthly': monthly,
-    }  
-
-
-    return render(request, 'monthly.html', context)
+    return render(request, 'monthly.html') 
 
 def yearly(request):
 
-    yearly = Yearly.objects.all()
 
-    context = {
-        'yearly': yearly,
-    }  
-
-    return render(request, 'yearly.html', context)
+    return render(request, 'yearly.html')
