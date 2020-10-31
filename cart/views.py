@@ -3,7 +3,11 @@ from django.contrib import messages
 
 def view_cart(request):
     """ Render the main cart page """
-    return render(request, 'cart.html')
+    context = {
+        'cart': 'active'
+    }
+
+    return render(request, 'cart.html', context)
 
 
 def add_to_cart(request, item_id):
