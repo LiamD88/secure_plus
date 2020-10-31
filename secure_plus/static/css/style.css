@@ -63,3 +63,7 @@
 .navfont {
   background-color: #FFFFFF;
 }
+
+.form-group input {
+  background-color: #F4F1F1!important;
+}
