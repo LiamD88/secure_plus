@@ -16,7 +16,12 @@ def register(request):
                 messages.error(request, 'There was an error registering your account.')           
     else:
         form = RegistrationForm()
-    return render(request, 'register.html', {'form': form})
+
+    context = {
+        'form': form,
+        'register': 'active'
+    }
+    return render(request, 'register.html', context)
 
 
 def login(request):
@@ -40,4 +45,9 @@ def login(request):
     else:
         login = LoginForm()
 
-    return render(request, 'login.html', {'form': login})
+    context = {
+        'form': login,
+        'login': 'active'
+    }
+
+    return render(request, 'login.html', context)

@@ -6,7 +6,8 @@ def services1(request):
     packages = Package.objects.all()
 
     context = {
-        'packages': packages
+        'packages': packages,
+        'services': 'active'
     }
 
     return render(request, 'services1.html', context)

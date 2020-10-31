@@ -50,3 +50,16 @@
   height: 400px;  /* The height is 400 pixels */
  
 }
+
+
+
+
+/* main colours */
+
+.main-bg {
+  background-color: #232222!important;
+}
+
+.navfont {
+  background-color: #FFFFFF;
+}
