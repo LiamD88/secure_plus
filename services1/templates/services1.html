@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<section class='main-bg'>
 
 <div class="container">
     <div class="row">
@@ -13,8 +14,8 @@
         <div class="row">
             {% for package in packages %}
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+                <div class="card main-bg" style="width: 18rem;">
+                    <div class="card-body text-white">
                       <h5 class="card-title">{{ package.name }}</h5>
                       <p class="card-text">{{ package.description }}</p>
                       <p>€{{ package.price }}</p>
@@ -22,7 +23,7 @@
                       <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
                         {% csrf_token %}
                      
-                        <button class="btn btn-lg"
+                        <button class="btn btn-lg text-white"
                                 type="submit">Add To Cart</button>
                     </form>
                     </div>
@@ -32,5 +33,5 @@
         </div>
 
     </div>
-
+</section>
 {% endblock %}
