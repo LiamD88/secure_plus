@@ -2,36 +2,35 @@
 
 {% block content %}
 
-<section class='main-bg'>
+<section class='main-bg'> <!--section to display background colour-->
 
-<div class="container">
-    <div class="row">
-    <div class="col-12">
-    
-       <p class="text-white">We offer three main packages here at secure plus.</p>
-
-        
+    <div class="container">
         <div class="row">
-            {% for package in packages %}
-            <div class="col-md-4">
-                <div class="card main-bg" style="width: 18rem;">
-                    <div class="card-body text-white border border-white">
-                      <h5 class="card-title font-italic text-center"><u>{{ package.name }}</u></h5>
-                      <p class="card-text">{{ package.description }}</p>
-                      <p>€{{ package.price }}</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
-                      <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
-                        {% csrf_token %}
-                     
-                        <button class="btn btn-lg text-white"
-                                type="submit">Add To Cart</button>
-                    </form>
-                    </div>
-                  </div>
-            </div>
-            {% endfor %}
-        </div>
+            <div class="col-12">
 
-    </div>
+                <p class="text-white">We offer three main packages here at secure plus.</p>
+
+                <!--cards displaying packages on offer-->
+                <div class="row"> 
+                    {% for package in packages %}
+                    <div class="col-md-4">
+                        <div class="card main-bg" style="width: 18rem;">
+                            <div class="card-body text-white border border-white">
+                                <h5 class="card-title font-italic text-center"><u>{{ package.name }}</u></h5>
+                                <p class="card-text">{{ package.description }}</p>
+                                <p>€{{ package.price }}</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
+                                    {% csrf_token %}
+
+                                    <button class="btn btn-lg text-white" type="submit">Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
 </section>
 {% endblock %}
