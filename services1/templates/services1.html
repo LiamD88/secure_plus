@@ -7,16 +7,16 @@
 <div class="container">
     <div class="row">
     <div class="col-12">
-        <h1>Packages</h1>
+    
+       <p class="text-white">We offer three main packages here at secure plus.</p>
 
-        <P>We offer 3 cyber security packages</P>
-
+        
         <div class="row">
             {% for package in packages %}
             <div class="col-md-4">
                 <div class="card main-bg" style="width: 18rem;">
-                    <div class="card-body text-white">
-                      <h5 class="card-title">{{ package.name }}</h5>
+                    <div class="card-body text-white border border-white">
+                      <h5 class="card-title font-italic text-center"><u>{{ package.name }}</u></h5>
                       <p class="card-text">{{ package.description }}</p>
                       <p>€{{ package.price }}</p>
                       <a href="#" class="btn btn-primary">Learn More</a>
