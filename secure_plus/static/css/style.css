@@ -1,3 +1,6 @@
+
+/* main page*/
+
 .parallax1 {
   background-image: url("../img/home-page.jpg");
   height: 90vh;
@@ -45,6 +48,7 @@
   font-size: 20px;
 }
 
+/* about map */
 
 #map {
   height: 400px;  /* The height is 400 pixels */
@@ -67,3 +71,25 @@
 .form-group input {
   background-color: #F4F1F1!important;
 }
+
+
+/* login+register page */
+
+.form-control {
+  margin: 1em 0;
+}
+
+.pad-top {
+ margin-top: 5em;
+
+}
+
+.pad-bottom {
+  margin-bottom: 11.8em;
+}
+
+.text-pad {
+  margin-top: 2em;
+}
+
+

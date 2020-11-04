@@ -7,17 +7,35 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <!--text at top of page-->
+            <div class="col-12 text-white text-center text-pad">
+                <p>To purchase any of our products or gain full access to the site you must register.</p>
+                <p>Just fill in the form below!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 pad-top pad-bottom mx-auto">
                 <!-- form to register-->
-                <form method="POST" action="{% url 'register' %}">
-
-                    {% csrf_token %}
-                    <div class="form-group">
-                        {{ form }}
+                <div class="card main-bg border border-white">
+                    <div class="card-header text-white text-center">
+                        Register
                     </div>
-                    <input type="submit" class="btn btn-primary">
+                    <div class="card-body">
+                        <form method="POST" action="{% url 'register' %}">
 
-                </form>
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form }}
+                            </div>
+
+                            <input type="submit" value="Register" class="btn btn-primary rounded-pill">
+
+
+
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
