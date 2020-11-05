@@ -7,17 +7,24 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-6 log-pad1 log-pad2 mx-auto">
                 <!-- form to log in-->
-                <form method="POST" action="{% url 'login' %}">
-
-                    {% csrf_token %}
-                    <div class="form-group">
-                        {{ form }}
+                <div class="card main-bg border border-white">
+                    <div class="card-header text-white text-center">
+                        Log In
                     </div>
-                    <input type="submit" class="btn btn-primary">
+                    <div class="card-body">
+                        <form method="POST" action="{% url 'login' %}">
 
-                </form>
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form }}
+                            </div>
+                            <input type="submit" value="Enter"class="btn btn-primary">
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
