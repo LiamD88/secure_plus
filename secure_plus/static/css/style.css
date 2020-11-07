@@ -61,7 +61,6 @@
 }
 
 
-
 /* main colours */
 
 .main-bg {
@@ -104,6 +103,15 @@
   margin-bottom: 27.3em;
 }
 
+/* services page */
+
+.card-margin1 {
+  margin-bottom: 2.05em;
+}
+
+.card-margin2 {
+  margin-bottom: 2.7em;
+}
 
 /* media queries */
 @media (min-width: 300px) {
