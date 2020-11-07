@@ -9,7 +9,7 @@
     <!--section to display background colour-->
 
 
-    <div class="container">
+    <div class="container"> <!--carousel at top of page-->
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -28,13 +28,50 @@
             </div>
 
         </div>
+
+
+        <div class="row"> <!--list of services offered-->
+            <div class="col-12 main-bg">
+                <p class="text-white text-center text-pad">A number of services we offer include</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-white text-pad">
+                <ul>
+                    <li>Penetration Testing</li>
+                    <li>Risk Assessment</li>
+                    <li>Managed Encryption</li>
+                    <li>Email Filtering</li>
+                    <li>Firewall Management</li>
+                    <li>SSL Certificate Management</li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-6 text-white text-pad">
+                <ul>
+                    <li> Operating System and Firmware Upgrades</li>
+                    <li>Implement Security Policy and Force Compliance
+                    </li>
+                    <li>24/7 Support</li>
+                    <li>Direct-to-Cloud Backups & Recoveries</li>
+                    <li>Cloud Services Support</li>
+                    <li>Staff Training</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="line-break">
+
         <div class="row">
             <div class="col-12">
-                <p class="text-white text-center text-pad card-margin1">We offer three main packages here at secure plus.</p>
+                <p class="text-white text-center package-marg  card-margin1">We offer three main packages here at secure
+                    plus.</p>
             </div>
         </div>
 
-        <div class="row">
+
+
+        <div class="row"> <!-- cards to purchase a service-->
             {% for package in packages %}
             <div class="col-md-4">
 
@@ -43,11 +80,10 @@
                         <h5 class="card-title text-center"><u>{{ package.name }}</u></h5>
                         <p class="card-text">{{ package.description }}</p>
                         <p>€{{ package.price }}</p>
-                     
+
                         <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
                             {% csrf_token %}
-                            <a href="#" class="btn btn-primary rounded-pill">Learn More</a>
-                            <button class="btn btn-light rounded-pill" type="submit">Add To Cart</button>
+                            <button class="btn btn-primary rounded-pill" type="submit">Add To Cart</button>
                         </form>
                     </div>
                 </div>
@@ -57,7 +93,6 @@
 
 
     </div>
-
 
 
 
