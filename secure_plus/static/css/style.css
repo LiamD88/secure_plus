@@ -75,6 +75,10 @@
   background-color: #F4F1F1!important;
 }
 
+.line-break {
+  background-color: #FFFFFF;
+}
+
 
 /* login+register page */
 
@@ -106,12 +110,17 @@
 /* services page */
 
 .card-margin1 {
-  margin-bottom: 2.05em;
+  margin-bottom: 2.5em;
 }
 
 .card-margin2 {
   margin-bottom: 2.7em;
 }
+
+.package-marg {
+  margin-top: 5em;
+}
+
 
 /* media queries */
 @media (min-width: 300px) {
