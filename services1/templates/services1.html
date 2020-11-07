@@ -30,7 +30,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="text-white">We offer three main packages here at secure plus.</p>
+                <p class="text-white text-center text-pad card-margin1">We offer three main packages here at secure plus.</p>
             </div>
         </div>
 
@@ -38,16 +38,16 @@
             {% for package in packages %}
             <div class="col-md-4">
 
-                <div class="card main-bg">
+                <div class="card main-bg card-margin2">
                     <div class="card-body text-white border border-white">
                         <h5 class="card-title text-center"><u>{{ package.name }}</u></h5>
                         <p class="card-text">{{ package.description }}</p>
                         <p>€{{ package.price }}</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                     
                         <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
                             {% csrf_token %}
-
-                            <button class="btn btn-lg text-white" type="submit">Add To Cart</button>
+                            <a href="#" class="btn btn-primary rounded-pill">Learn More</a>
+                            <button class="btn btn-light rounded-pill" type="submit">Add To Cart</button>
                         </form>
                     </div>
                 </div>
