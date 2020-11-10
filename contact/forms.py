@@ -1,12 +1,14 @@
 from django import forms
+from .models import Contact
 
 
 
-class ContactForm(forms.ModeldForm):
+class ContactForm(forms.ModelForm):
     name = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Name'}))
-    message = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Message'}))
     email = forms.CharField(label='', widget=forms.EmailInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Email'}))
+    message = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Message'}))
+    
 
     class Meta:
-        model = contact
-        fields = ['name', 'message' 'email']
+        model = Contact
+        fields = ['name', 'email', 'message']

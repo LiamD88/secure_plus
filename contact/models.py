@@ -4,8 +4,9 @@ from django.utils import timezone
 class Contact(models.Model):
 
     name = models.CharField(max_length=150)
-    message = models.TextField()
     email = models.EmailField()
+    message = models.TextField(max_length=500)
+ 
     time = models.DateTimeField(default=timezone.now)
 
 
