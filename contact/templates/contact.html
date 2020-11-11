@@ -5,12 +5,22 @@
 
 <section class="main-bg">
 
+
+
+
+
     <div class="container">
         <div class="row">
             <!--text at top of page-->
+
+
+
             <div class="col-12 text-white text-center text-pad">
+
+
+
                 <p>Fill in your details below and we will contact you as soon as we can.</p>
-           
+
             </div>
         </div>
         <div class="row">
@@ -18,24 +28,24 @@
                 <!-- form to register-->
                 <div class="card main-bg border border-white">
                     <div class="card-header text-white text-center">
-                      Contact
+                        Contact
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{% url 'contact' %}">
-    
+
                             {% csrf_token %}
                             <div class="form-group">
                                 {{ form }}
                             </div>
-    
+
                             <input type="submit" value="Submit" class="btn btn-primary rounded-pill">
-    
-    
-    
+
+
+
                         </form>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </div>

@@ -26,6 +26,8 @@ def contact(request):
             fail_silently=False,
         )
 
+        messages.success(request, 'Thank you for message, we will be in touch as soon as we can!')
+
     else:
 
         form = ContactForm()
