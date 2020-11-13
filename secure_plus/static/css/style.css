@@ -19,33 +19,9 @@
     background-size: cover;
   }
   
-
-  
-.desktop-icons {
-  padding-left: 2em;
-  font-size: 80px;
-    
-}
-
-.desktop-icons li a i {
-  color: #000000;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-}
-
-.desktop-icons li a i:hover {
-  color: #8B0000;
-}
-
-.padding-icon {
-  padding-top: 20em;
-  padding-left: 5em;
-}
-
-.desktop-text {
-  font-size: 20px;
+.main-text {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* about map */
