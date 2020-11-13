@@ -97,6 +97,18 @@
   margin-top: 5em;
 }
 
+/* cart */
+
+
+.cart-pad1 {
+  margin-top: 10em;
+}
+
+.cart-pad2 {
+  margin-bottom: 27.05em;
+}
+
+
 
 /* media queries */
 @media (min-width: 300px) {
