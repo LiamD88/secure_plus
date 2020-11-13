@@ -5,10 +5,20 @@
 
 <section class="main-bg">
 <div class="container">
+<div class="row">
+    <div class="col-12 text-white text-center text-pad">
+        <p>Continue with the option below to confirm your purchase.</p>
+        <p>Won't be long until your secure!</p>
+    </div>
+</div>
+
+
     <div class="row">
-        <div class="col-12">
+
+    
+        <div class="col-md-6 cart-pad1 cart-pad2 mx-auto">
           
-            <div class="card">
+            <div class="card border border-white">
                 <div class="card-body main-bg">
                 {% for item in cart_items %}
                     <h5 class="card-title text-white">{{ item.package.name }}</h5>
