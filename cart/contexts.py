@@ -18,4 +18,6 @@ def cart_contents(request):
         'total': total, 
     }
 
+
     return context   
+

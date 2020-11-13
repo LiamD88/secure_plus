@@ -23,4 +23,12 @@ def add_to_cart(request, item_id):
     return redirect(reverse('view_cart'))
    
   
+def clear_cart(request):
+
+    cart = request.session.get('cart', {})
+
+    cart.clear()
+    request.session['cart'] = cart
+    messages.success(request, "You have removed all items from cart.")
+    return redirect('view_cart')
 

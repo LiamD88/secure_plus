@@ -3,21 +3,23 @@
 
 {% block content %}
 
+<section class="main-bg">
 <div class="container">
     <div class="row">
         <div class="col-12">
           
             <div class="card">
-                <div class="card-body">
+                <div class="card-body main-bg">
                 {% for item in cart_items %}
-                    <h5 class="card-title">{{ item.packages.name }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ item.package.price }}</h6>
-                    <p class="card-text">{{ item.package.total }}.</p>
+                    <h5 class="card-title text-white">{{ item.package.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-white">{{ item.package.price }}</h6>
+                    <p class="card-text text-white">{{ item.package.total }}</p>
+                <a class ="btn btn-primary" href="{% url 'clear_cart' %}">Clear Cart</a>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>  
 </div>
-
+</section>
 {% endblock %}
