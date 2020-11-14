@@ -24,6 +24,7 @@
                     <h5 class="card-title text-white">{{ item.package.name }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted text-white">{{ item.package.price }}</h6>
                     <p class="card-text text-white">{{ item.package.total }}</p>
+                    <a class="btn btn-primary" href="{% url 'checkout' %}">Checkout</a>
                 <a class ="btn btn-primary" href="{% url 'clear_cart' %}">Clear Cart</a>
                 </div>
                 {% endfor %}
