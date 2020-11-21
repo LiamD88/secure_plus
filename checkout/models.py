@@ -1,4 +1,5 @@
 from django.db import models
+from services1.models import Package
 
 class Order(models.Model):
 
@@ -14,5 +15,19 @@ class Order(models.Model):
 
 
     def __str__(self):
-        return self.full_name
+        return f'{self.full_name}' 
+    
+
+
+
+class OrderLineItem(models.Model):
+
+    order = models.ForeignKey(Order, null=False, on_delete=models.CASCADE)
+    package = models.ForeignKey(Package, null=False, on_delete=models.CASCADE)
+    quantity = models.IntegerField(blank=False, default=1)
+
+    def __str__(self):
+        return f'{self.quantity} {self.package.name} {self.package.price}'
+     
+
     
