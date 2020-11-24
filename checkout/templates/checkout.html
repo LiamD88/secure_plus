@@ -12,12 +12,19 @@
         <div class="col-md-6 mx-auto">
             <div class="card border border-white">
                 <div class="card-body main-bg">
+
+                    <form action="{% url 'checkout' %}" method="POST">
+                         {% csrf_token %}
                     <div class="form-group">
                         {{ order_form }}
                     </div>
-                
-                <a class="btn btn-primary" href="">Checkout</a>
-    
+                    <div class="form-grouP">
+                        {{ payment_form }}
+                        <input type="submit" id="checkout-button"></button>
+                    </div>
+      
+  
+                </form>
                 </div>
             </div>
         </div>
@@ -27,4 +34,5 @@
 </section>
 
  {% endblock %}
+
 
