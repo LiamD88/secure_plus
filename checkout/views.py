@@ -7,7 +7,7 @@ from services1.models import Package
 import stripe
 
 stripe.api_key = settings.STRIPE_PRIVATE
-stripe.api_key = settings.STRIPE_PUBLIC
+
 
 
 
@@ -33,13 +33,21 @@ def checkout(request):
                 order_line_item = OrderLineItem(order=order, package=package, quantity=quantity)
                 order_line_item.save()
                 
+            payment_stripe = stripe.PaymentIntent.create(
+                amount=int(total * 100),
+                currency=settings.STRIPE_CURRENCY
+
+            )
+
+
         else:
             messages.error(request, 'Payment not processed')
 
     else:
+        
         order_form = OrderForm()
         payment_form = PaymentForm()
-           
+          
 
 
    
