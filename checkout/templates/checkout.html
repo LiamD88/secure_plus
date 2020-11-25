@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 
@@ -14,7 +14,7 @@
                 <div class="card border border-white">
                     <div class="card-body main-bg">
 
-                        <form action="{% url 'checkout' %}" method="POST">
+                        <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                             {% csrf_token %}
                             <div class="form-group">
                                 {{ order_form }}
@@ -29,7 +29,15 @@
                 <div class="card border border-white">
                     <div class="card-body main-bg">
                         <div class="form-group">
-                            {{ payment_form }}
+                            <label for="card-element">
+                                <p class="text-white">Credit or debit card</p>
+                              </label>
+                            <div id="card-element">
+                                
+                                <!-- A Stripe Element will be inserted here. -->
+                              </div>
+                              <div id="card-errors" role="alert"></div>
+                            </div>
                             <input type="submit">
                         </div>
 
@@ -42,5 +50,12 @@
         
 
 </section>
+{% endblock %}
+
+
+{% block postloadjs %}
+
+<script type="text/javascript">Stripe.publicKey = '{{ public_key }}';</script>
+
 
 {% endblock %}

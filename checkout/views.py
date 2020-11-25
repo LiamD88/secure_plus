@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .forms import OrderForm, PaymentForm
+from .forms import OrderForm
 from django. conf import settings
 from .models import OrderLineItem
 from services1.models import Package
@@ -16,11 +16,9 @@ def checkout(request):
 
     if request.method == 'POST':
         order_form = OrderForm(request.POST)
-        payment_form = PaymentForm(request.POST)
 
 
-
-        if order_form.is_valid() and payment_form.is_valid():
+        if order_form.is_valid():
             order = order_form.save(commit=False)
             order.save()
 
@@ -37,6 +35,7 @@ def checkout(request):
                     amount=int(total * 100),
                     currency=settings.STRIPE_CURRENCY)
 
+                order_form = OrderForm()
 
             messages.success(request, 'Your order has been placed')
             return redirect(reverse('services1'))
@@ -52,14 +51,12 @@ def checkout(request):
             return redirect(reverse('services1'))
         
         order_form = OrderForm()
-        payment_form = PaymentForm()
           
 
 
    
     context = {
             'order_form': order_form,
-            'payment_form': payment_form,
             'public_key': settings.STRIPE_PUBLIC
             }
     
