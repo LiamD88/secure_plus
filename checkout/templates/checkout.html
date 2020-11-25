@@ -8,33 +8,39 @@
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card border border-white">
-                <div class="card-body main-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card border border-white">
+                    <div class="card-body main-bg">
 
-                    <form action="{% url 'checkout' %}" method="POST">
-                         {% csrf_token %}
-                    <div class="form-group">
-                        {{ order_form }}
+                        <form action="{% url 'checkout' %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ order_form }}
+                            </div>
+
                     </div>
-                    <div class="form-group">
-                        {{ payment_form }}
-                     <input type="submit">
-                    </div>
-      
+
+
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border border-white">
+                    <div class="card-body main-bg">
+                        <div class="form-group">
+                            {{ payment_form }}
+                            <input type="submit">
+                        </div>
 
-                </form>
+                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        
 
 </section>
 
- {% endblock %}
-
-
+{% endblock %}
