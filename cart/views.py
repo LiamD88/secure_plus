@@ -13,14 +13,19 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add items to your cart"""
     
-    quantity = 1
-    cart = request.session.get('cart', {})
+    if request.user.is_authenticated:
 
-    cart[item_id] = cart.get(item_id, quantity)
-        
-    request.session['cart'] = cart
-    messages.success(request, 'You have added one package to your cart!')
-    return redirect(reverse('view_cart'))
+        quantity = 1
+        cart = request.session.get('cart', {})
+
+        cart[item_id] = cart.get(item_id, quantity)
+            
+        request.session['cart'] = cart
+        messages.success(request, 'You have added one package to your cart!')
+        return redirect(reverse('view_cart'))
+    
+    messages.error(request, 'You must be logged in to purchase a package')
+    return redirect('login')
    
   
 def clear_cart(request):

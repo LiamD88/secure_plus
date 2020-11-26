@@ -7,6 +7,11 @@ from .forms import RegistrationForm, LoginForm
 
 def register(request):
 
+    if request.user.is_authenticated:
+        messages.error(request, 'You are already logged in!')
+        return redirect('home')
+
+
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
@@ -26,6 +31,10 @@ def register(request):
 
 
 def login(request):
+
+    if request.user.is_authenticated:
+        messages.error(request, 'You are already logged in!')
+        return redirect('home')
 
     if request.method == 'POST':   
         login = LoginForm(request.POST)
