@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block title %} About {% endblock %}
+
 {% block content %}
 <section class="main-bg">
     <!--section to display background colour-->
@@ -50,7 +52,7 @@
 </section>
 
 {% endblock %}
-{% block script %}
+{% block scriptmap %}
 <!--script fpr gppgle map api key-->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&callback=initMap"
     type="text/javascript"></script>

@@ -6,3 +6,4 @@ function initMap() { //initialises map
       var office = {lat: 53.271301, lng: -6.204100};var marker = new google.maps.Marker({position: office, map: map});
     
     }
+    console.log("Hello world!");
