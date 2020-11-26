@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.conf import settings
+
+GOOGLE_MAPS_API_KEY = settings.GOOGLE_MAPS_API_KEY
 
 
 def about(request):
@@ -6,7 +9,7 @@ def about(request):
     context = {
     
     'about': 'active',
-    'GOOGLE_MAPS_API_KEY' : 'GOOGLE_MAPS_API_KEY'
+    'GOOGLE_MAPS_API_KEY' : settings.GOOGLE_MAPS_API_KEY
     
     }
     
