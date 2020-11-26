@@ -1,10 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.core.mail import send_mail
 from .models import Contact
 from .forms import ContactForm
 import os
-
 
 
 def contact(request):
@@ -27,6 +26,7 @@ def contact(request):
         )
 
         messages.success(request, 'Thank you for message, we will be in touch as soon as we can!')
+        return redirect('home')
 
     else:
 
