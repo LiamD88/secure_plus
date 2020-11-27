@@ -11,7 +11,7 @@ def view_cart(request):
 
     return render(request, 'cart.html', context)
 
-@login_required
+
 def add_to_cart(request, item_id):
     """ Add items to your cart"""
     

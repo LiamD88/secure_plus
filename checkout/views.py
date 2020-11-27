@@ -12,7 +12,6 @@ stripe.api_key = settings.STRIPE_PRIVATE
 
 
 
-@login_required
 def checkout(request):
 
     if request.method == 'POST':
