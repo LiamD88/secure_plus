@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
+
 
 {% block title %} Checkout {% endblock %}
 
+
+{% block content %}
 <section class="main-bg">
 
 
@@ -53,9 +55,9 @@
 {% endblock %}
 
 
-{% block postloadjs %}
-<script src="{% static 'js/stripe.js' %}"></script>
+{% block stripejs %}
 <script type="text/javascript" src="https://js.stripe.com/v3"></script>
+<script src="{% static 'js/stripe.js' %}"></script>
 <script type="text/javascript">Stripe.publicKey = '{{ public_key }}';</script>
 
 
