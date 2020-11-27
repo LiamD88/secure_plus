@@ -5,8 +5,6 @@ from .models import Contact
 from .forms import ContactForm
 import os
 
-EMAIL = os.environ.get('EMAIL')
-
 
 def contact(request):
 
