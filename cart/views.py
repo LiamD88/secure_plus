@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def view_cart(request):
     """ Render the main cart page """
     context = {
@@ -9,7 +11,7 @@ def view_cart(request):
 
     return render(request, 'cart.html', context)
 
-
+@login_required
 def add_to_cart(request, item_id):
     """ Add items to your cart"""
     

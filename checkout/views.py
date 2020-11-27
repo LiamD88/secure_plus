@@ -4,6 +4,7 @@ from .forms import OrderForm
 from django. conf import settings
 from .models import OrderLineItem
 from services1.models import Package
+from django.contrib.auth.decorators import login_required
 import stripe
 
 stripe.api_key = settings.STRIPE_PRIVATE
@@ -11,7 +12,7 @@ stripe.api_key = settings.STRIPE_PRIVATE
 
 
 
-
+@login_required
 def checkout(request):
 
     if request.method == 'POST':
