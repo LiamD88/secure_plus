@@ -141,8 +141,13 @@
 
 /* error pages */
 
+.error-margin-1 {
+  margin-top: 7em;
+}
 
-
+.error-margin-2 {
+ margin-bottom: 17.2em;
+} 
 
 /* media queries */
 @media (min-width: 300px) {
