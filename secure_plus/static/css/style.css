@@ -3,6 +3,8 @@
 
 
 
+
+
 /* body + font */
 
 .secure {
@@ -141,6 +143,12 @@
 
 .package-marg {
   margin-top: 5em;
+}
+
+.card-hov:hover{
+  box-shadow: 4px 4px 2.5px #B4B1B1;    
+  transform: scale(1.1);
+
 }
 
 /* cart */
