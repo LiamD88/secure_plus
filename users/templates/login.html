@@ -12,17 +12,17 @@
             <div class="col-md-6 log-pad1 log-pad2 mx-auto">
                 <!-- form to log in-->
                 <div class="card main-bg border border-white">
-                    <div class="card-header text-white text-center">
+                    <div class="card-header text-white text-center text-styles">
                         Log In
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{% url 'login' %}">
 
                             {% csrf_token %}
-                            <div class="form-group">
+                            <div class="form-group text-styles">
                                 {{ form }}
                             </div>
-                            <input type="submit" value="Enter"class="btn btn-primary rounded-pill">
+                            <input type="submit" value="Enter"class="btn btn-primary rounded-pill text-styles">
 
                         </form>
                     </div>

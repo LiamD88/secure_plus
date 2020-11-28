@@ -36,11 +36,11 @@
 
         <div class="row"> <!--list of services offered-->
             <div class="col-12 main-bg">
-                <p class="text-white text-center text-pad">A number of services we offer include</p>
+                <p class="text-white text-center text-pad text-styles">A number of services we offer include</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 text-white text-pad">
+            <div class="col-md-6 text-white text-pad text-styles">
                 <ul>
                     <li>Penetration Testing</li>
                     <li>Risk Assessment</li>
@@ -52,7 +52,7 @@
             </div>
 
 
-            <div class="col-md-6 text-white text-pad">
+            <div class="col-md-6 text-white text-pad text-styles">
                 <ul>
                     <li> Operating System and Firmware Upgrades</li>
                     <li>Implement Security Policy and Force Compliance
@@ -68,7 +68,7 @@
 
         <div class="row">
             <div class="col-12">
-                <p class="text-white text-center package-marg  card-margin1">We offer three main packages here at secure
+                <p class="text-white text-center package-marg  card-margin1 text-styles">We offer three main packages here at secure
                     plus.</p>
             </div>
         </div>
@@ -81,13 +81,13 @@
 
                 <div class="card main-bg card-margin2">
                     <div class="card-body text-white border border-white">
-                        <h5 class="card-title text-center"><u>{{ package.name }}</u></h5>
-                        <p class="card-text">{{ package.description }}</p>
+                        <h5 class="card-title text-center h2">{{ package.name }}</h5>
+                        <p class="card-text text-styles">{{ package.description }}</p>
                         <p>€{{ package.price }}</p>
 
                         <form class="form-group" method="POST" action="{% url 'add_to_cart' package.id %}">
                             {% csrf_token %}
-                            <button class="btn btn-primary rounded-pill" type="submit">Add To Cart</button>
+                            <button class="btn btn-primary rounded-pill text-styles" type="submit">Add To Cart</button>
                         </form>
                     </div>
                 </div>

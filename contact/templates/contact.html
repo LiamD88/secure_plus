@@ -17,7 +17,7 @@
 
 
 
-            <div class="col-12 text-white text-center text-pad">
+            <div class="col-12 text-white text-center text-pad text-styles">
 
 
 
@@ -29,18 +29,18 @@
             <div class="col-md-6 pad-top pad-bottom mx-auto">
                 <!-- form to register-->
                 <div class="card main-bg border border-white">
-                    <div class="card-header text-white text-center">
+                    <div class="card-header text-white text-center text-styles">
                         Contact
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{% url 'contact' %}">
 
                             {% csrf_token %}
-                            <div class="form-group">
+                            <div class="form-group text-styles">
                                 {{ form }}
                             </div>
 
-                            <input type="submit" value="Submit" class="btn btn-primary rounded-pill">
+                            <input type="submit" value="Submit" class="btn btn-primary rounded-pill text-styles">
 
 
 

@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <!--text at top of page-->
-            <div class="col-12 text-white text-center text-pad">
+            <div class="col-12 text-white text-center text-pad text-styles">
                 <p>To purchase any of our products or gain full access to the site you must register.</p>
                 <p>Just fill in the form below!</p>
             </div>
@@ -18,18 +18,18 @@
             <div class="col-md-6 pad-top pad-bottom mx-auto">
                 <!-- form to register-->
                 <div class="card main-bg border border-white">
-                    <div class="card-header text-white text-center">
+                    <div class="card-header text-white text-center text-styles">
                         Register
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{% url 'register' %}">
 
                             {% csrf_token %}
-                            <div class="form-group">
+                            <div class="form-group text-styles">
                                 {{ form }}
                             </div>
 
-                            <input type="submit" value="Register" class="btn btn-primary rounded-pill">
+                            <input type="submit" value="Register" class="btn btn-primary rounded-pill text-styles">
 
 
 

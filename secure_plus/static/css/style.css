@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap:");
+
 
 
 /* body + font */
@@ -7,6 +9,10 @@
 
   font-family: 'Goldman', cursive;
 
+}
+
+.text-styles {
+  font-family: 'Overpass', sans-serif;
 }
 
 
