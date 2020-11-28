@@ -51,7 +51,7 @@
 
 .parallax1 {
   background-image: url("../img/home-page.jpg");
-  height: 90vh;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,13 +60,15 @@
 
 .parallax2 {
     background-image: url("../img/home-page2.jpg");
-    height: 90vh;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
+
+
 .main-text {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -240,3 +242,9 @@
   }
 }
 
+
+@media (max-width: 768px) {
+  .parallax1, .parallax2 {
+    background-attachment: inherit;
+  }
+}

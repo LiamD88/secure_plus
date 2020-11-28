@@ -9,7 +9,7 @@
 <!--top parallax image-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-12 parallax1">
+    <div class="col-12 parallax1" id="img1">
     </div>
   </div>
 </div>
@@ -33,7 +33,7 @@
 <!--bottom parralax image-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-12 parallax2">
+    <div class="col-12 parallax2" id="img1">
     </div>
   </div>
 </div>
@@ -44,7 +44,7 @@
 
 {% endblock %}
 
-{% block text_effect %}
+{% block extrajs %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="{% static 'js/text.js' %}"></script>
+<script src="{% static 'js/extra.js' %}"></script>
 {% endblock %}
