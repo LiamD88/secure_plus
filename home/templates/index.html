@@ -19,7 +19,12 @@
 <div class="container-fluid main-bg">
   <div class="row">
     <div class="col-12 text-center main-bg main-text">
-      <h1 class="text-white">Secure Plus</h2>
+  <h1 class="ml14">
+  <span class="text-wrapper">
+    <span class="letters text-white secure">Secure Plus</span>
+    <span class="line"></span>
+  </span>
+</h1>
     </div>
   </div>
 </div>
@@ -37,4 +42,9 @@
 
 
 
+{% endblock %}
+
+{% block text_effect %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="{% static 'js/text.js' %}"></script>
 {% endblock %}
