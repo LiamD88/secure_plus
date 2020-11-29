@@ -55,3 +55,38 @@ Below are the links for wireframes, one was created for each device, mobile, tab
   [Services Ipad Page](https://raw.githubusercontent.com/LiamD88/secure_plus/master/secure_plus/static/wireframes/Services%20Page%20Ipad.png)/
   [Services Mobile Page](https://raw.githubusercontent.com/LiamD88/secure_plus/master/secure_plus/static/wireframes/Services%20Page%20Mobile.png)
 
+# Features
+
+### Home Page
+
+There are two main features on the home page, the parallax effect images which is noticeable on desktop screens which you can scoll up and down. The second feature is the text in the centre of the page using the company name which has an animation effect.
+
+### About Page
+
+This page is mainly comprised of txt. There is a google map at the bottom of the page with a ficticious address to show the location of the company and there is also a clickable link which will bring you to the contact us page to send a contact request.
+
+### Services Page
+
+This has three main feature, the first is a carousel at the top of the page which will cycle through 3 seperate images. There is some text in the middle of the page to list services but the main feature being the 3 cards at the bottom of the page which have a hover effect when you move across them and have clicable links to purchase a service.
+
+### Register/Login Page
+
+Both these pages have the same feature, on the register page you have a form to fill in to register your details and the log in page is similar in that you fill in a form with your details to log in.
+
+### Cart Page
+
+This page has one main feature in the centre of the page a card with two buttons one to continue to the checkout and one to clear the cart.
+
+### Checkout Page
+
+This has 3 main features, the text at the top of the page will change depending on which option you have selected to purchase. There is a form to fill in your details to purchase. The final feature is the stripe payment form which allows you to enter in your card details.
+
+### Future Features
+
+* Customers having the option to log in and view there details, i.e current package they are on, how many days left etc.
+* A new part of the site with a full breakdown on everything that is on offer in each package.
+* Review section for customers to leave full reviews of our service.
+* Online chat capabilitys for customers to speak to a live agent.
+
+
+
