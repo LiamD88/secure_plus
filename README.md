@@ -113,7 +113,7 @@ This has 3 main features, the text at the top of the page will change depending 
 # Issues/Bugs
 
 * The parallax 1 image doesn't resize correctly on ipads when being scaled down.
-* The registration form sometimes will not register details correctly if you just press enter on the keyboard as opposed to just clicking the submit button.
+* The registration form sometimes will not register details correctly if you just press enter on the keyboard as opposed to just clicking the submit button. Registration form can sometime have an issue if I use the same name in password as my email or username it won't register.
 * On the home page, the two parallax images have an id of img1. I understand you can only have one id per element. In my extra.js file I added in img 1 + img 2 for this function to target both parallax images. However when I change the id in parallax2 to img 2 in my home.html file it doesnt work and when I remove the + img 2 from my extra.js file it only targets one image. This is the only way I could get it to work.
 * In the contact app in views.py file the contact function I had an issue with send_mail. I had to create a generic email to place in here for emails to be sent to as when I tried to import the original from my env.py file it wouldnt work. Even importing from settings etc this was the only way I could get this to work.
 
