@@ -106,3 +106,39 @@ This has 3 main features, the text at the top of the page will change depending 
  * [Auto Prefixer](https://autoprefixer.github.io/) This was used to check if my CSS was valid on all browsers.
 
 
+# Deployment
+
+# Deployment
+
+This project was created with [VSCode](https://code.visualstudio.com) an external IDE not used on the course.
+In order to deploy the project I have listed the steps I have taken below.
+
+* The code was written in my local repository on VS code.
+* A repository was created in Github for the project.
+* The project was then linked from my local repository to github to allow the code to be stored remotely.
+* An app was then created in heroku and under the deploy tab, you can enter your github repository link into this section to connect both repositories.
+* In this section you can enable automatic deploys which allows you to automatically deploy a heroku build each time you update your github repository.
+* The app was then available via a clickable link on the heroku site.
+
+If you wish to deploy locally and clone the repository. To do this you would:
+
+* Go to the main page of the github repository and click clone/download, this will be located under the repository name.
+* In the section clone with HTTPS copy the clone URL and open the terminal on your IDE.
+* Change the working directory to the location you wish your cloned directory to be placed.
+* Type git clone and paste in your URL you had copied earlier.
+* Now press enter and your clone will be created.
+
+# Credits
+
+## Content
+
+* [Home Page Animation](https://tobiasahlin.com/moving-letters/#14) This is where i got the html/css and javascript for the animation of the company name on the home page. Also referenced in the css and js pages
+* [Parallax Responsive design](https://inkplant.com/code/responsive-parallax-images) This is where i got the css and javascript for the responsive design of my parallax images, also referenced in css and js pages
+* [Card Hover](https://stackoverflow.com/questions/63174850/how-to-add-animation-to-a-bootstrap-4-card-on-hover. ) This is where i got the css and for the hover effect on my cards on the services pages also referenced in css
+
+* The footer social media links code was taken from a lesson the code institute provided us for the first project, works quite well so used it again.
+
+  
+## Media
+
+* All images on the site are taken from google.
