@@ -20,7 +20,7 @@ When making a payment on the site you must use the below details or else the pay
 
 # UX
 
-The design of the site isn't overly complicated, most pages are easy to navigate and layed out in a way for any user to find what they are looking for. The colour scheme is mainly black and an off white colour for text. The images on the pages being the brightest thing to see along with some of the submit buttons being a more stand out blue colour.
+The design of the site isn't overly complicated, most pages are easy to navigate and laid out in a way for any user to find what they are looking for. The colour scheme is mainly black and an off white colour for text. The images on the pages being the brightest thing to see along with some of the submit buttons being a more stand out blue colour.
 
 On the services page the options to purchase have a hover effect when you move the mouse over them to bring more animation to the site.
 
@@ -28,15 +28,15 @@ On the services page the options to purchase have a hover effect when you move t
 ---
 The site is aimed at commercial entities and I wanted to make it as simple as possible to navigate through the site. Below are some user stories.
 
-1. As a multinational corporation with over 1000 staff cyber security is very important to us. I found this website quite easy to navigate, I like that they have a lot of the services offered but I think the main thing that stands out for me is they have an option to click a contact page and contact them about any other services I might need so they can tailor a package to my needs. I will requite this with so many staff.
+1. As a multinational corporation with over 1000 staff cyber security is very important to us. I found this website quite easy to navigate, I like that they have a lot of the services offered but I think the main thing that stands out for me is they have an option to click a contact page and contact them about any other services I might need, so they can tailor a package to my needs. I will require this due to the fact I have so many staff.
 
 2. As a small business owner I am not very computer literate and I want somebody to help me with everything about internet security as a lot of business is online these days. I have recently had a huge issue with a virus in the IT infrastructure of my business, I want to be able to go on here and have a complete overhaul. I see they have a package here for a comprehensive check of our systems, this is exactly what  I need.
 
-3. As a graphic designer I do all of my work on my laptop and I want to ensure I am protected against any cyber threats because if somethign happens with this laptop I will be unable to work. Money is tight, a lot of companies don't display prices for this type of thing without contacting them first. I want to be able to see prices before approaching the company, this website has 3 main prices displayed and I think I will go for the monthly option.
+3. As a graphic designer I do all of my work on my laptop and I want to ensure I am protected against any cyber threats because if something happens with this laptop I will be unable to work. Money is tight, a lot of companies don't display prices for this type of thing without contacting them first. I want to be able to see prices before approaching the company, this website has 3 main prices displayed and I think I will go for the monthly option.
 
-4. As a student I want to have some sort of protection against cyber threats on my laptop to protect my work. I want a full list of all benefits and everything completely laid out when I look throuz§gh this site. Upon searching through services I can see they have some of the main benefits noted down but not all as this is more geared towards commercial entities and it looks like they will contact you after to get everything set up. This site is not for me as I am not a commercial business.
+4. As a student I want to have some sort of protection against cyber threats on my laptop to protect my work. I want a full list of all benefits and everything completely laid out when I look through this site. Upon searching through services I can see they have some of the main benefits noted down but not all as this is more geared towards commercial entities and it looks like they will contact you after to get everything set up. This site is not for me as I am not a commercial business.
 
-5. As a business owner just starting out costs are tight at the moment and it would suit me to havea an option to pay on a short term basis. When searching for costs I see they have a monthly option which suits me and I will go for this.
+5. As a business owner just starting out costs are tight at the moment and it would suit me to have an option to pay on a short term basis. When searching for costs I see they have a monthly option which suits me and I will go for this.
 
 ## Wireframes
 ---
@@ -59,23 +59,23 @@ Below are the links for wireframes, one was created for each device, mobile, tab
 
 ### Home Page
 
-There are two main features on the home page, the parallax effect images which is noticeable on desktop screens which you can scoll up and down. The second feature is the text in the centre of the page using the company name which has an animation effect.
+There are two main features on the home page, the parallax effect images which is noticeable on desktop screens which you can scroll up and down. The second feature is the text in the center of the page using the company name which has an animation effect.
 
 ### About Page
 
-This page is mainly comprised of txt. There is a google map at the bottom of the page with a ficticious address to show the location of the company and there is also a clickable link which will bring you to the contact us page to send a contact request.
+This page is mainly composed of text. There is a google map at the bottom of the page with a fictitious address to show the location of the company and there is also a clickable link which will bring you to the contact us page to send a contact request.
 
 ### Services Page
 
-This has three main feature, the first is a carousel at the top of the page which will cycle through 3 seperate images. There is some text in the middle of the page to list services but the main feature being the 3 cards at the bottom of the page which have a hover effect when you move across them and have clicable links to purchase a service.
+This has three main features, the first is a carousel at the top of the page which will cycle through 3 separate images. There is some text in the middle of the page to list services but the main feature being the 3 cards at the bottom of the page which have a hover effect when you move across them and have clickable links to purchase a service.
 
 ### Register/Login Page
 
-Both these pages have the same feature, on the register page you have a form to fill in to register your details and the log in page is similar in that you fill in a form with your details to log in.
+Both these pages have the same feature, on the register page you have a form to fill in to register your details and the login page is similar in that you fill in a form with your details to log in.
 
 ### Cart Page
 
-This page has one main feature in the centre of the page a card with two buttons one to continue to the checkout and one to clear the cart.
+This page has one main feature in the center of the page a card with two buttons one to continue to the checkout and one to clear the cart.
 
 ### Checkout Page
 
@@ -86,7 +86,7 @@ This has 3 main features, the text at the top of the page will change depending 
 * Customers having the option to log in and view there details, i.e current package they are on, how many days left etc.
 * A new part of the site with a full breakdown on everything that is on offer in each package.
 * Review section for customers to leave full reviews of our service.
-* Online chat capabilitys for customers to speak to a live agent.
+* Online chat capabilities for customers to speak to a live agent.
 
 # Technologies Used 
 
@@ -100,7 +100,7 @@ This has 3 main features, the text at the top of the page will change depending 
  * [GitHub](https://github.com/) This allowed me to upload my local repository onto a remote server which was linked to Heroku to build which would push the latest changes to the version which was then built on Heroku.
  * [Heroku](https://www.heroku.com/) This is a site which allows you to deploy this type of application.
  * [VSCode](https://code.visualstudio.com) I used this as my ide to build my project. The local repository along with all my code was stored here.
-* [Travis](https://travis-ci.org/) Travis was used to ensure project was building succesfully.
+* [Travis](https://travis-ci.org/) Travis was used to ensure project was building successfully.
 * [Stripe](https://stripe.com/ie) Stripe was used to process the payment on my site.
  * [HTML Validator](https://validator.w3.org/) This allowed me to validate my HTML.
  * [CSS Validator](https://jigsaw.w3.org/css-validator/) This allowed me to validate my CSS.
@@ -112,8 +112,8 @@ This has 3 main features, the text at the top of the page will change depending 
 
 # Issues/Bugs
 
-* The parallax 1 image doesnt resize correctly on ipads when being scaled down.
-* The registration form sometimes will not register details correctly if you just press enter on keyboard as opposed to clicking the submit button.
+* The parallax 1 image doesn't resize correctly on ipads when being scaled down.
+* The registration form sometimes will not register details correctly if you just press enter on the keyboard as opposed to just clicking the submit button.
 * On the home page, the two parallax images have an id of img1. I understand you can only have one id per element. In my extra.js file I added in img 1 + img 2 for this function to target both parallax imgas. However when I change the id in parallax2 to img 2 it doesnt work and when I remove the + img 2 from my extra.js file it only targets one image. This is the only way I could get it to work.
 * In the contact app in views.py file the contact function I had an issue with send_mail. I had to create a generic email to place in here for emails to be sent to as when I tried to import the original from my env.py file it wouldnt work. Even importing from settings etc this was the only way I could get this to work.
 
