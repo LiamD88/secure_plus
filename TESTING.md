@@ -107,3 +107,8 @@
    2. Stripe Payment Form  
         *  Form was tested for responsiveness on all devices with developer tools.
         *  Card details were entered and submitted to ensure was working correctly.
+
+
+### Browser Support
+
+    Site was tested on multiple browsers for effectiveness and responsiveness.
