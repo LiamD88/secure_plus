@@ -88,5 +88,21 @@ This has 3 main features, the text at the top of the page will change depending 
 * Review section for customers to leave full reviews of our service.
 * Online chat capabilitys for customers to speak to a live agent.
 
+# Technologies Used 
+
+* HTML - This was used to create the structure of the site and each individual page.
+* CSS - This was used to style certain aspects of the site.
+* Python - This is the main language used to create the backend of the website.
+* [Bootstrap](https://getbootstrap.com/) Bootstrap was used to create the structure of the site using its grid system and to make the site responsive on all devices.
+* [Django](https://docs.djangoproject.com/en/3.1/) This is a python framework which allowed me to structure all the views of my site into individual apps for each page.
+* [JQuery](https://jquery.com/) This was used with bootstrap to allow you to place certain elements and functionality on your page.
+ * [GitHub](https://github.com/) This allowed me to upload my local repository onto a remote server which was linked to Heroku to build which would push the latest changes to the version which was then built on Heroku.
+ * [Heroku](https://www.heroku.com/) This is a site which allows you to deploy this type of application.
+ * [VSCode](https://code.visualstudio.com) I used this as my ide to build my project. The local repository along with all my code was stored here.
+* [Travis](https://travis-ci.org/) Travis was used to ensure project was building succesfully.
+* [Stripe](https://stripe.com/ie) Stripe was used to process the payment on my site.
+ * [HTML Validator](https://validator.w3.org/) This allowed me to validate my HTML.
+ * [CSS Validator](https://jigsaw.w3.org/css-validator/) This allowed me to validate my CSS.
+ * [Auto Prefixer](https://autoprefixer.github.io/) This was used to check if my CSS was valid on all browsers.
 
 
