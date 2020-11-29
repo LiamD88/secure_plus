@@ -27,7 +27,7 @@ def contact(request):
             fail_silently=False,
         )
 
-        messages.success(request, 'Thank you for message, we will be in touch as soon as we can!')
+        messages.success(request, 'Thank you for your message, we will be in touch as soon as we can!')
         return redirect('home')
 
     else:
