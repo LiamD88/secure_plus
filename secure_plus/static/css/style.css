@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Overpass&display=swap:");
 
@@ -31,7 +38,9 @@
   height: 2px;
   width: 100%;
   background-color: #fff;
-  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
   bottom: 0;
 }
 
@@ -139,8 +148,11 @@
 }
 
 .card-hov:hover {
-  box-shadow: 4px 4px 2.5px #b4b1b1;
-  transform: scale(1.1);
+  -webkit-box-shadow: 4px 4px 2.5px #b4b1b1;
+          box-shadow: 4px 4px 2.5px #b4b1b1;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* cart */
@@ -166,7 +178,8 @@
 
 /* stripe */
 .StripeElement {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   height: 40px;
 
@@ -176,13 +189,20 @@
   border-radius: 4px;
   background-color: white;
 
-  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+
+          box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  -o-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
 }
 
 .StripeElement--focus {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
 }
 
 .StripeElement--invalid {
