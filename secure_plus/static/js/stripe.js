@@ -1,5 +1,5 @@
 // this will display stripe payment card option
-
+// taken from https://stripe.com/docs/payments/accept-a-payment?integration=elements
 
 var stripe = Stripe('pk_test_51Hq0G1HSyeuczTiTlUjdROYrN3uFcaB0iZpfIS8UBeo0E5Kjy7Gx3LxsuYPlihuYQHT0E6K6VW6rNIh8KBeWAGaa00crybDfMg');
 

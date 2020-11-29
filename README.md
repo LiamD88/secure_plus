@@ -143,6 +143,7 @@ If you wish to deploy locally and clone the repository. To do this you would:
 * [Home Page Animation](https://tobiasahlin.com/moving-letters/#14) This is where i got the html/css and javascript for the animation of the company name on the home page. Also referenced in the css and js pages
 * [Parallax Responsive design](https://inkplant.com/code/responsive-parallax-images) This is where i got the css and javascript for the responsive design of my parallax images, also referenced in css and js pages
 * [Card Hover](https://stackoverflow.com/questions/63174850/how-to-add-animation-to-a-bootstrap-4-card-on-hover. ) This is where i got the css and for the hover effect on my cards on the services pages also referenced in css
+* [Stripe Payments](https://stripe.com/docs/payments/accept-a-payment?integration=elements ) This is where i got the stripe html/css and javascript from to set up the card payment option, also referenced in the css and js pages.
 
 * The footer social media links code was taken from a lesson the code institute provided us for the first project, works quite well so used it again.
 
