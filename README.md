@@ -95,6 +95,7 @@ This has 3 main features, the text at the top of the page will change depending 
 * Python - This is the main language used to create the backend of the website.
 * [Bootstrap](https://getbootstrap.com/) Bootstrap was used to create the structure of the site using its grid system and to make the site responsive on all devices.
 * [Django](https://docs.djangoproject.com/en/3.1/) This is a python framework which allowed me to structure all the views of my site into individual apps for each page.
+* [Postgres SQL](https://www.postgresql.org/) The is the database I used for my project and linked with heroku to information of the models used.
 * [JQuery](https://jquery.com/) This was used with bootstrap to allow you to place certain elements and functionality on your page.
  * [GitHub](https://github.com/) This allowed me to upload my local repository onto a remote server which was linked to Heroku to build which would push the latest changes to the version which was then built on Heroku.
  * [Heroku](https://www.heroku.com/) This is a site which allows you to deploy this type of application.
@@ -105,8 +106,15 @@ This has 3 main features, the text at the top of the page will change depending 
  * [CSS Validator](https://jigsaw.w3.org/css-validator/) This allowed me to validate my CSS.
  * [Auto Prefixer](https://autoprefixer.github.io/) This was used to check if my CSS was valid on all browsers.
 
+# Testing
 
-# Deployment
+[TESTING.md](https://github.com/LiamD88/cooking-for-you/blob/master/TESTING.md)This is a link to the testing done on this website.
+
+# Issues/Bugs
+
+* The parallax 1 image doesnt resize correctly on ipads when being scaled down.
+* The registration form sometimes will not register details correctly if you just press enter on keyboard as opposed to clicking the submit button.
+* On the home page, the two parallax images have an id of img1. I understand you can only have one id per element. In my extra.js file I added in img 1 + img 2 for this function to target both parallax imgas. However when I change the id in parallax2 to img 2 it doesnt work and when I remove the + img 2 from my extra.js file it only targets one image. This is the only way I could get it to work.
 
 # Deployment
 
