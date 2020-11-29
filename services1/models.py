@@ -2,6 +2,8 @@ from django.db import models
 
 class Package(models.Model):
     
+    """ model to add pacakges"""
+    
     class Meta:
         verbose_name_plural = 'Package'
 

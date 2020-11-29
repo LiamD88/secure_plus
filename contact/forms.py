@@ -1,7 +1,7 @@
 from django import forms
 from .models import Contact
 
-
+""" form created for contact page"""
 
 class ContactForm(forms.ModelForm):
     name = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Name'}))

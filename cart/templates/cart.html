@@ -7,38 +7,38 @@
 
 
 
-<section class="main-bg">
-<div class="container">
-<div class="row">
-    <div class="col-12 text-white text-center text-pad text-styles">
-        <p>Continue with the option below to confirm your purchase.</p>
-        <p>Won't be long until your secure!</p>
-    </div>
-</div>
-
-
-    <div class="row">
-
-    
-        <div class="col-md-6 cart-pad1 cart-pad2 mx-auto">
-          
-            <div class="card border border-white">
-                <div class="card-body main-bg">
-                {% for item in cart_items %}
-                    <h5 class="card-title text-white text-styles text-center">{{ item.package.name }}</h5>
-                    <h6 class="card-subtitle mb-2 text-white text-styles text-center">€{{ item.package.price }}</h6>
-                    <p class="card-text text-white text-styles">{{ item.package.total }}</p>
-                 
-                   <div class="div d-flex justify-content-around">
-                    <a class="btn btn-primary rounded-pill text-styles" href="{% url 'checkout' %}">Checkout</a>
-                    <a class ="btn btn-primary rounded-pill text-styles text-right" href="{% url 'clear_cart' %}">Clear Cart</a>
-                   </div> 
-                
-                </div>
-                {% endfor %}
+<section class="main-bg">  <!-- text at top of page-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-white text-center text-pad text-styles">
+                <p>Continue with the option below to confirm your purchase.</p>
+                <p>Won't be long until your secure!</p>
             </div>
         </div>
-    </div>  
-</div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-6 cart-pad1 cart-pad2 mx-auto">
+
+                <div class="card border border-white">  <!--cart details in middle of page-->
+                    <div class="card-body main-bg">
+                        {% for item in cart_items %}
+                        <h5 class="card-title text-white text-styles text-center">{{ item.package.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-white text-styles text-center">€{{ item.package.price }}</h6>
+
+                        <div class="div d-flex justify-content-around">
+                            <a class="btn btn-primary rounded-pill text-styles" href="{% url 'checkout' %}">Checkout</a>
+                            <a class="btn btn-primary rounded-pill text-styles text-right"
+                                href="{% url 'clear_cart' %}">Clear Cart</a>
+                        </div>
+
+                    </div>
+                        {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}

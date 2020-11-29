@@ -32,16 +32,17 @@
                     with
                     social engineering and how to have measures in place to prevent any threats surfacing.
                 </p>
-                <p> If you want to contact us or have any requests for services outside the ones we offer click <a href="{% url 'contact' %}">here.</a>
+                <p> If you want to contact us or have any requests for services outside the ones we offer click <a
+                        href="{% url 'contact' %}">here.</a>
                 </p>
-  
- 
+
+
                 </p>
             </div>
         </div>
     </div>
     <div class="container">
-        <!--map to dispaled at bottom of-->
+        <!--map to displayed at bottom of page-->
         <div class="row">
             <div class="col-12 map-pad">
                 <div id="map"></div>
@@ -53,7 +54,7 @@
 
 {% endblock %}
 {% block scriptmap %}
-<!--script fpr gppgle map api key-->
+<!--script fpr google map api key-->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&callback=initMap"
     type="text/javascript"></script>
 <script src="{% static 'js/map.js' %}"></script>

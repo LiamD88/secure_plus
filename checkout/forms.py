@@ -1,6 +1,9 @@
 from django import forms
 from .models import Order
 
+
+""" stripe order form """
+                                    
 class OrderForm(forms.ModelForm):
     full_name = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Full Name'}))
     email = forms.CharField(label='', widget=forms.EmailInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Email'}))

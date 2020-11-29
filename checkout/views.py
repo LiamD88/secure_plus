@@ -14,6 +14,8 @@ stripe.api_key = settings.STRIPE_PRIVATE
 
 def checkout(request):
 
+    """" function to post order to database and to create stripe payment"""
+
     if request.method == 'POST':
         order_form = OrderForm(request.POST)
 

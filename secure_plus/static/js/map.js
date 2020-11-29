@@ -1,3 +1,5 @@
+// function for map on about page
+
 function initMap() { //initialises map
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,

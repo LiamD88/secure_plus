@@ -1,3 +1,6 @@
+// this will display stripe payment card option
+
+
 var stripe = Stripe('pk_test_51Hq0G1HSyeuczTiTlUjdROYrN3uFcaB0iZpfIS8UBeo0E5Kjy7Gx3LxsuYPlihuYQHT0E6K6VW6rNIh8KBeWAGaa00crybDfMg');
 
 // Create an instance of Elements.

@@ -3,6 +3,8 @@ from services1.models import Package
 
 class Order(models.Model):
 
+    """ this is the model to create an order"""
+
     full_name = models.CharField(max_length=100, blank=False)
     email = models.EmailField(max_length=250, blank=False)
     company_name = models.CharField(max_length=100, blank=True)
@@ -21,6 +23,8 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+
+    """ this will allow us to see specific orders in the admin area """
 
     order = models.ForeignKey(Order, null=False, on_delete=models.CASCADE)
     package = models.ForeignKey(Package, null=False, on_delete=models.CASCADE)

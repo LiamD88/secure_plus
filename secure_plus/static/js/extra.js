@@ -1,4 +1,4 @@
-// Wrap every letter in a span
+// function to animate txt on home page
 var textWrapper = document.querySelector('.ml14 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 

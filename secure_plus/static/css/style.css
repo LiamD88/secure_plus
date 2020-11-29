@@ -1,22 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Overpass&display=swap:");
 
-
-
-
-
 /* body + font */
 
 .secure {
-
-  font-family: 'Goldman', cursive;
-
+  font-family: "Goldman", cursive;
 }
 
 .text-styles {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
-
 
 .ml14 {
   font-weight: 200;
@@ -47,7 +40,7 @@
   line-height: 1em;
 }
 
-/* main page*/
+/* home page*/
 
 .parallax1 {
   background-image: url("../img/home-page.jpg");
@@ -59,26 +52,23 @@
 }
 
 .parallax2 {
-    background-image: url("../img/home-page2.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-
+  background-image: url("../img/home-page2.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .main-text {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* about map */
+/* about page */
 
 #map {
-  height: 400px;  /* The height is 400 pixels */
- 
+  height: 400px; /* The height is 400 pixels */
 }
 
 .map-pad {
@@ -93,21 +83,20 @@
 /* main colours */
 
 .main-bg {
-  background-color: #232222!important;
+  background-color: #232222 !important;
 }
 
 .navfont {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .form-group input {
-  background-color: #F4F1F1!important;
+  background-color: #f4f1f1 !important;
 }
 
 .line-break {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
 
 /* login+register page */
 
@@ -116,8 +105,7 @@
 }
 
 .pad-top {
- margin-top: 5em;
-
+  margin-top: 5em;
 }
 
 .pad-bottom {
@@ -150,14 +138,12 @@
   margin-top: 5em;
 }
 
-.card-hov:hover{
-  box-shadow: 4px 4px 2.5px #B4B1B1;    
+.card-hov:hover {
+  box-shadow: 4px 4px 2.5px #b4b1b1;
   transform: scale(1.1);
-
 }
 
 /* cart */
-
 
 .cart-pad1 {
   margin-top: 10em;
@@ -177,7 +163,6 @@
 .check-pad2 {
   margin-bottom: 8em;
 }
-
 
 /* stripe */
 .StripeElement {
@@ -215,8 +200,8 @@
 }
 
 .error-margin-2 {
- margin-bottom: 17.2em;
-} 
+  margin-bottom: 17.2em;
+}
 
 /* footer */
 
@@ -227,7 +212,7 @@
 
 .social-links li a i {
   padding-left: 5px;
-  color: #B3AFAF;
+  color: #b3afaf;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -235,9 +220,8 @@
 }
 
 .social-links li a i:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 /* media queries */
 @media (min-width: 300px) {
@@ -276,9 +260,9 @@
   }
 }
 
-
 @media (max-width: 768px) {
-  .parallax1, .parallax2 {
+  .parallax1,
+  .parallax2 {
     background-attachment: inherit;
   }
 }
@@ -287,27 +271,22 @@
   .contact-pad {
     margin-bottom: 14em;
   }
-
 }
 
 @media (max-width: 800px) {
   .pad-bottom {
     margin-bottom: 7em;
   }
-
 }
 
 @media (max-width: 800px) {
-  .log-pad2{
+  .log-pad2 {
     margin-bottom: 19em;
   }
-
 }
 
 @media (max-width: 800px) {
-  .cart-pad2{
+  .cart-pad2 {
     margin-bottom: 17em;
   }
-
 }
-

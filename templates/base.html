@@ -12,7 +12,7 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <title>{% block title %}{% endblock %}</title>
+  <title>{% block title %}{% endblock %}</title> <!--title to display on each page-->
 </head>
 
 <body class="main-bg">
@@ -28,7 +28,7 @@
         <li class="nav-item {{ home }}">
           <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
-         <li class="nav-item {{ about }}">
+        <li class="nav-item {{ about }}">
           <a class="nav-link " href="{% url 'about' %}">About</a>
         </li>
         <li class="nav-item {{ services }}">
@@ -44,7 +44,7 @@
         <li class="nav-item {{ home }}">
           <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
-         <li class="nav-item {{ about }}">
+        <li class="nav-item {{ about }}">
           <a class="nav-link " href="{% url 'about' %}">About</a>
         </li>
         <li class="nav-item {{ services }}">
@@ -62,24 +62,24 @@
   </nav>
 
 
-{% if messages %}
-    {% for message in messages %}
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="alert alert-primary alert-dismissible fade show text-center" role="alert">
-            <span>{{ message }}</span>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+  {% if messages %} <!--message alert for each page-->
+  {% for message in messages %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="alert alert-primary alert-dismissible fade show text-center" role="alert">
+          <span>{{ message }}</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
 
-    {% endfor %}
-{% endif %}
+  {% endfor %}
+  {% endif %}
 
   <!--main page content displayed on extended templates-->
   {% block content %}
@@ -127,16 +127,16 @@
   </script>
 
 
-{% endblock %}
+  {% endblock %}
 
-{% block scriptmap %}
-{% endblock %}
+  {% block scriptmap %} <!--javascript for maps-->
+  {% endblock %}
 
-{% block stripejs %}
-{% endblock %}
+  {% block stripejs %}<!--javascript for stripe-->
+  {% endblock %}
 
-{% block extrajs %}
-{% endblock %}
+  {% block extrajs %}<!--javascript for addition content-->
+  {% endblock %}
 
 
 </body>

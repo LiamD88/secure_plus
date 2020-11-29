@@ -3,6 +3,8 @@ from .models import Package
 
 def services1(request):
 
+    """ function to render services page packages"""
+
     packages = Package.objects.all()
 
     context = {

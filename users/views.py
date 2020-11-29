@@ -7,6 +7,8 @@ from .forms import RegistrationForm, LoginForm
 
 def register(request):
 
+    """ function to register users """
+
     if request.user.is_authenticated:
         messages.error(request, 'You are already logged in!')
         return redirect('home')
@@ -31,6 +33,8 @@ def register(request):
 
 
 def login(request):
+
+    """ function to login """
 
     if request.user.is_authenticated:
         messages.error(request, 'You are already logged in!')
@@ -63,6 +67,8 @@ def login(request):
     return render(request, 'login.html', context)
 
 def logout_user(request):
+
+    """ function to log out """
 
     logout(request)
     messages.success(request, "You have been succesfully logged out!")

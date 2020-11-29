@@ -8,6 +8,8 @@ import os
 
 def contact(request):
 
+    """function for contact form """
+
     if request.method == 'POST':
 
         form = Contact(    

@@ -12,19 +12,21 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6">  <!-- checkout pagkage and cost to be displayed-->
                 {% for item in cart_items %}
-                <p class="h3 text-white text-styles check-pad">Your order is €{{item.package.price }} {{ item.package.name }}</p>
+                <p class="h3 text-white text-styles check-pad">Your order is €{{item.package.price }}
+                    {{ item.package.name }}</p>
             </div>
                 {% endfor %}
             <div class="col-md-6">
-                <p class="h3 text-white text-center text-styles check-pad">Please fill in the rest of the details to complete your order.</p>
+                <p class="h3 text-white text-center text-styles check-pad">Please fill in the rest of the details to
+                    complete your order.</p>
             </div>
         </div>
         <div class="row check-pad2">
             <div class="col-md-6">
                 <div class="card border border-white">
-                    <div class="card-body main-bg">
+                    <div class="card-body main-bg"> <!-- order form details-->
 
                         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                             {% csrf_token %}
@@ -41,34 +43,36 @@
                 <div class="card border border-white ">
                     <div class="card-body main-bg">
                         <div class="form-group">
-                            <label for="card-element">
+                            <label for="card-element"> <!-- stripe payment-->
                                 <p class="text-white text-styles">Credit or debit card</p>
-                              </label>
+                            </label>
                             <div id="card-element">
-                                
-                                <!-- A Stripe Element will be inserted here. -->
-                              </div>
-                              <div id="card-errors" role="alert"></div>
-                            </div>
-                            <input type="submit" value="Submit"class="btn btn-primary rounded-pill text-styles">
-                        </div>
 
+                                <!-- A Stripe Element will be inserted here. -->
+                            </div>
+                            <div id="card-errors" role="alert"></div>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-primary rounded-pill text-styles">
                     </div>
 
-                    </form>
                 </div>
+
+                </form>
             </div>
         </div>
-        
+    </div>
+
 
 </section>
 {% endblock %}
 
 
-{% block stripejs %}
+{% block stripejs %} <!-- stripe script and js-->
 <script type="text/javascript" src="https://js.stripe.com/v3"></script>
 <script src="{% static 'js/stripe.js' %}"></script>
-<script type="text/javascript">Stripe.publicKey = '{{ public_key }}';</script>
+<script type="text/javascript">
+    Stripe.publicKey = '{{ public_key }}';
+</script>
 
 
 {% endblock %}
