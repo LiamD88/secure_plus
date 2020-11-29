@@ -17,12 +17,23 @@ class RegistrationForm(UserCreationForm):
         model = User
         fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
 
+    
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        
+        if User.objects.filter(email=email).exists():
+            raise ValidationError("This email is already registered to another account")
+        return email
 
-""" forn to login """
+
+""" form to login """
 class LoginForm(forms.Form):
     
     username = forms.CharField(label='', widget=forms.TextInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Username' }))
     password = forms.CharField(label='', widget=forms.PasswordInput(attrs={'required': 'True', 'class': 'form-control', 'placeholder': 'Password'}))
+
+
+
 
 
 

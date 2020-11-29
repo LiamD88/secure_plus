@@ -3,6 +3,7 @@ from django.contrib.auth.models import auth
 from django.contrib import messages
 from django.contrib.auth import logout
 from .forms import RegistrationForm, LoginForm
+from django.core.validators import ValidationError
 
 
 def register(request):
@@ -16,12 +17,19 @@ def register(request):
 
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
+        username = request.POST['username']
+        password = request.POST['password1']
+
         if form.is_valid():
             form.save()
-            messages.success(request, 'Congratulations, you are now registered!')
-            return redirect('home')
+            user = auth.authenticate(username=username, password=password)
+            
+            if user is not None:
+                auth.login(request, user)
+                messages.success(request, 'Congratulations, you are now registered!')
+                return redirect('home')
         else:
-                messages.error(request, 'There was an error registering your account.')           
+            messages.error(request, 'There was an error registering your account.')           
     else:
         form = RegistrationForm()
 
