@@ -28,7 +28,7 @@ On the services page the options to purchase have a hover effect when you move t
 ---
 The site is aimed at commercial entities and I wanted to make it as simple as possible to navigate through the site. Below are some user stories.
 
-1. As a multinational corporation with over 1000 staff cyber security is very important to us. I found this website quite easy to navigate, I like that they have a lot of the services offered but I think the main thing that stands out for me is they have an option to click a contact page and contact them about any other services I might need, so they can tailor a package to my needs. I will require this due to the fact I have so many staff.
+1. As a multinational corporation with over 1000 staff cyber security is very important to us. I found this website quite easy to navigate, I like that they have a lot of the services offered but I think the main thing that stands out for me is they have an option to click a contact page and contact them about any other services I might need, so they can tailor a package to suit my needs. I will require this due to the fact I have so many staff.
 
 2. As a small business owner I am not very computer literate and I want somebody to help me with everything about internet security as a lot of business is online these days. I have recently had a huge issue with a virus in the IT infrastructure of my business, I want to be able to go on here and have a complete overhaul. I see they have a package here for a comprehensive check of our systems, this is exactly what  I need.
 
@@ -94,8 +94,8 @@ This has 3 main features, the text at the top of the page will change depending 
 * CSS - This was used to style certain aspects of the site.
 * Python - This is the main language used to create the backend of the website.
 * [Bootstrap](https://getbootstrap.com/) Bootstrap was used to create the structure of the site using its grid system and to make the site responsive on all devices.
-* [Django](https://docs.djangoproject.com/en/3.1/) This is a python framework which allowed me to structure all the views of my site into individual apps for each page.
-* [Postgres SQL](https://www.postgresql.org/) The is the database I used for my project and linked with heroku to information of the models used.
+* [Django](https://docs.djangoproject.com/en/3.1/) This is a python framework which allowed me to structure all the views of my site into individual apps for each page. I used version 2.2 for this application.
+* [Postgres SQL](https://www.postgresql.org/) The is the database I used for my project and linked with heroku to store and access information of the models used.
 * [JQuery](https://jquery.com/) This was used with bootstrap to allow you to place certain elements and functionality on your page.
  * [GitHub](https://github.com/) This allowed me to upload my local repository onto a remote server which was linked to Heroku to build which would push the latest changes to the version which was then built on Heroku.
  * [Heroku](https://www.heroku.com/) This is a site which allows you to deploy this type of application.
@@ -114,7 +114,7 @@ This has 3 main features, the text at the top of the page will change depending 
 
 * The parallax 1 image doesn't resize correctly on ipads when being scaled down.
 * The registration form sometimes will not register details correctly if you just press enter on the keyboard as opposed to just clicking the submit button.
-* On the home page, the two parallax images have an id of img1. I understand you can only have one id per element. In my extra.js file I added in img 1 + img 2 for this function to target both parallax imgas. However when I change the id in parallax2 to img 2 it doesnt work and when I remove the + img 2 from my extra.js file it only targets one image. This is the only way I could get it to work.
+* On the home page, the two parallax images have an id of img1. I understand you can only have one id per element. In my extra.js file I added in img 1 + img 2 for this function to target both parallax images. However when I change the id in parallax2 to img 2 in my home.html file it doesnt work and when I remove the + img 2 from my extra.js file it only targets one image. This is the only way I could get it to work.
 * In the contact app in views.py file the contact function I had an issue with send_mail. I had to create a generic email to place in here for emails to be sent to as when I tried to import the original from my env.py file it wouldnt work. Even importing from settings etc this was the only way I could get this to work.
 
 # Deployment

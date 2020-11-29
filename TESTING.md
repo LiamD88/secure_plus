@@ -39,11 +39,12 @@
 
 1. Navigation Bar 
    
-    * This was tested for responsiveness on all devices with developer tools and on this page as it is then extended to all other html pages.
+    * This was tested for responsiveness on all devices with developer tools on this specific page as it is then extended to all other html pages.
     * All header links clicked and tested to be working.
 
 2. Footer 
     
+    * This was tested for responsiveness on all devices with developer tools on this specific page as it is then extended to all other html pages.
     * All social links clicked and checked to be working.
 ### Home Page
 
