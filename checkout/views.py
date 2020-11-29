@@ -39,7 +39,7 @@ def checkout(request):
 
                 order_form = OrderForm()
 
-            messages.success(request, 'Your order has been placed')
+            messages.success(request, 'Your order has been placed! We will be in touch soon!')
             return redirect(reverse('services1'))
         
         messages.error(request, 'This order has not been processed')
