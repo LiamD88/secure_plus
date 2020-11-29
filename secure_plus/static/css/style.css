@@ -218,6 +218,27 @@
  margin-bottom: 17.2em;
 } 
 
+/* footer */
+
+.social-links {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.social-links li a i {
+  padding-left: 5px;
+  color: #B3AFAF;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  color: #FFFFFF;
+}
+
+
 /* media queries */
 @media (min-width: 300px) {
   .carousel .image-size {
