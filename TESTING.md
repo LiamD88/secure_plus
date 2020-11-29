@@ -32,3 +32,77 @@
 
 
 
+## Manual Testing of all elements and functionality on every page.
+
+
+### Base.html
+
+1. Navigation Bar 
+   
+    * This was tested for responsiveness on all devices with developer tools and on this page as it is then extended to all other html pages.
+    * All header links clicked and tested to be working.
+
+2. Footer 
+    
+    * All social links clicked and checked to be working.
+### Home Page
+
+1. Parallax Images
+
+    * This was tested for responsiveness on all devices with developer tools.
+  
+### About Page
+
+1. Main Text 
+
+   * This was tested for responsiveness on all devices with developer tools.
+
+2. Google Map 
+   
+   * This was tested for responsiveness on all devices with developer tools and tested to endure was working when zooming in or out.
+
+3. Clickable link to contact page.
+
+    * This link was clicked to check it brought you to the correct page on site.
+
+### Contact Page
+
+1. Form 
+      * Form was filled in and submitted to ensure was working correctly
+      * Form was tested for responsiveness on all devices with developer tools.
+
+
+### Services Page
+   
+   1. Carousel
+   
+      * This was tested for responsiveness on all devices with developer tools.
+
+   2. Cards
+ 
+       * The cards at the bottom where all hovered over to ensure hover effect was working.
+       *  The links where all clicked to ensure it allowed you to add items to the cart.
+
+### Register/Login Page
+
+   1. Forms
+   
+      * Forms were filled in and submitted to ensure was working correctly
+      * Form was tested for responsiveness on all devices with developer tools.
+
+### Cart Page
+   
+   1. Checkout Card
+       
+        * The card was checked for responsiveness on all devices with developer tools.
+        * Cart was sumbitted and cleared to ensure it was working correctly.
+
+### Checkout Page
+   
+   1. Order Form
+        *  Form was tested for responsiveness on all devices with developer tools.
+        *  From was filled in and submitted to ensure was working correctly.
+
+   2. Stripe Payment Form  
+        *  Form was tested for responsiveness on all devices with developer tools.
+        *  Card details were entered and submitted to ensure was working correctly.
