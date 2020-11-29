@@ -261,3 +261,32 @@
     background-attachment: inherit;
   }
 }
+
+@media (max-width: 800px) {
+  .contact-pad {
+    margin-bottom: 14em;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .pad-bottom {
+    margin-bottom: 7em;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .log-pad2{
+    margin-bottom: 19em;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .cart-pad2{
+    margin-bottom: 17em;
+  }
+
+}
+
