@@ -12,7 +12,8 @@
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <title>{% block title %}{% endblock %}</title> <!--title to display on each page-->
+  <title>{% block title %}{% endblock %}</title>
+  <!--title to display on each page-->
 </head>
 
 <body class="main-bg">
@@ -62,7 +63,8 @@
   </nav>
 
 
-  {% if messages %} <!--message alert for each page-->
+  {% if messages %}
+  <!--message alert for each page-->
   {% for message in messages %}
   <div class="container">
     <div class="row">
@@ -114,10 +116,13 @@
       </div>
     </div>
   </div>
+
   {% block scriptjs %}
+
+
   <!--jquery scripts for bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -129,13 +134,16 @@
 
   {% endblock %}
 
-  {% block scriptmap %} <!--javascript for maps-->
+  {% block scriptmap %}
+  <!--javascript for maps-->
   {% endblock %}
 
-  {% block stripejs %}<!--javascript for stripe-->
+  {% block stripejs %}
+  <!--javascript for stripe-->
   {% endblock %}
 
-  {% block extrajs %}<!--javascript for addition content-->
+  {% block extrajs %}
+  <!--javascript for addition content-->
   {% endblock %}
 
 
